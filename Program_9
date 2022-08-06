@@ -1,0 +1,32 @@
+/* package codechef; // don't place package name! */
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+
+class Codechef
+{
+    
+    public static int fact(int n){
+        if (n>1){ 
+        int jact=1;
+        for (int i=1;i<=n ;i++ ){
+            jact=jact*i;
+        }
+        return jact;
+        }else{
+            return 1;
+        }
+    }
+	
+    public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the limit other than 1");
+		int n=sc.nextInt();
+		int factorial=fact(n);
+		System.out.println(factorial);
+	}
+    
+}
