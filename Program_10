@@ -1,0 +1,32 @@
+/* package codechef; // don't place package name! */
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+
+class Codechef
+{
+    
+    public static int fib(int n){
+        int nextterm=0;
+        int firstterm=0;
+        int secondterm=1;
+        for (int i=1;i<=n ;i++ ){
+             nextterm=firstterm+secondterm;
+            firstterm=secondterm;
+            secondterm=nextterm;
+            System.out.println(" "+nextterm);
+        }
+        return nextterm;
+     }
+	
+    public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the limit other than 1");
+		int n=sc.nextInt();
+		int fib=fib(n);	
+	}
+    
+}
