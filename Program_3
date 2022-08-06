@@ -1,0 +1,33 @@
+/* package codechef; // don't place package name! */
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+/* Name of the class has to be "Main" only if the class is public. */
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+      Scanner sc=new Scanner(System.in);
+      System.out.println("enter a number");
+      int n=sc.nextInt();
+      int h=n;
+      int count=0;
+      while(n > 0){
+          n=n/10;
+          count++;
+      } 
+      int add=0;
+      for (int i=1;i<=count;i++ ){
+          int num=h%10;
+           add=add+num;
+           h=h/10;
+      }
+      if (add%5==0){
+               System.out.println("It is divisible by 5");
+           }else{
+               System.out.println("It is not divisible by 5");
+           } 
+	}   
+}
