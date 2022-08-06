@@ -1,0 +1,29 @@
+/* package codechef; // don't place package name! */
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+/* Name of the class has to be "Main" only if the class is public. */
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the limit of first two arrays: ");
+		int n=sc.nextInt();
+		int a[]=new int[n];
+		int b[]=new int[n];
+		int c[]=new int[n];
+		for (int i=0;i<n;i++){
+		    System.out.println("Enter the first set of numbers");
+		    a[i]=sc.nextInt();
+		    System.out.println("Enter the second set of numbers");
+		    b[i]=sc.nextInt();
+		    c[i]=a[i]+b[i];
+		} 
+		for (int i=0;i<n;i++ ){
+		    System.out.println(c[i]);
+		} 
+	}
+}
